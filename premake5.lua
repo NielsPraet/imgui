@@ -19,3 +19,4 @@ staticruntime "On"
 filter "system:linux"
 systemversion "latest"
 cppdialect "C++17"
+buildoptions {"-fPIC"}
