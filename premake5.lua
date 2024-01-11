@@ -22,4 +22,3 @@ staticruntime "On"
 systemversion "latest"
 cppdialect "C++17"
 buildoptions {"-fPIC"}
-defines {"IMGUI_API=__attribute__((visibility(\"default\")))"}
