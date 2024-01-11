@@ -15,8 +15,10 @@ filter "system:windows"
 systemversion "latest"
 cppdialect "C++17"
 staticruntime "On"
+defines {"IMGUI_API=__declspec(dllexport)"}
 
 filter "system:linux"
 systemversion "latest"
 cppdialect "C++17"
 buildoptions {"-fPIC"}
+defines {"IMGUI_API=__attribute__((visibility(\"default\")))"}
