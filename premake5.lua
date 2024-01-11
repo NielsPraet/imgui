@@ -18,6 +18,7 @@ staticruntime "On"
 defines {"IMGUI_API=__declspec(dllexport)"}
 
 filter "system:linux"
+staticruntime "On"
 systemversion "latest"
 cppdialect "C++17"
 buildoptions {"-fPIC"}
